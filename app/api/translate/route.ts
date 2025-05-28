@@ -5,7 +5,7 @@ export async function POST(request: NextRequest) {
     const { audioUrl, targetLanguage, docId } = await request.json();
 
     // Forward request to your backend
-    const backendResponse = await fetch("https://python-server-q30o.onrender.com/process-audio/process-audio", {
+    const backendResponse = await fetch("https://python-server-q30o.onrender.com/process-audio", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ audioUrl, targetLanguage, docId }),
