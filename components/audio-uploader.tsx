@@ -102,7 +102,7 @@ export default function AudioUploader() {
                   accept="audio/*"
                   onChange={handleFileChange}
                   className="hidden"
-                  disabled={success}
+                  // disabled={success}
                 />
                 <label
                   htmlFor="audio-file"
